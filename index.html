@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display an image in a beautiful way</title>
+    <link rel="stylesheet" href="./css/findPictureStyle.css">
 </head>
+
 <body>
-    <h1>这是用于显示M4C的成果的界面</h1>
+
+    <div class="header">
+        <div id="theme_Name">
+            <h1>这是用于显示M4C的成果的界面</h1>
+        </div>
+        <div id="authorInfo">
+
+        </div>
+    </div>
+
+    <div class="showImage">
+        <div id="resultBar">
+            <div class="question">
+                <h2 id="question"></h2>
+            </div>
+
+
+
+
+            <!-- 用于展示的img -->
+
+
+            <div id="nav-buts">
+                <!-- 这里是手动创造两个按钮 -->
+
+                <button id="getLastImg" type="button">&#171</button>
+                <img id="imageNeeded" src="test_image\test_images\0a5be8c3ad1036d4.jpg">
+                <button id="getNextImg" type="button">&#187</button>
+
+            </div>
+
+            <div class="answer">
+                <h2 id="answer"></h2>
+            </div>
+
+        </div>
+    </div>
+    <script src="./javascript/findPicture.js" type="module"></script>
+
 </body>
+
 </html>
