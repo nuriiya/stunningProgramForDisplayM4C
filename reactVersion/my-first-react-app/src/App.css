@@ -212,3 +212,109 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  margin-bottom: 16px;
+  padding: 8px 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  /* 注意这里只输入两个的话默认其实是上下 和 左右  */
+  
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  
+  /* 
+    display: inline-block
+      与 display: inline 相比，主要区别在于 display: inline-block 允许在元素上设置宽度和高度。
+
+      同样，如果设置了 display: inline-block，将保留上下外边距/内边距，而 display: inline 则不会。
+
+      与 display: block 相比，主要区别在于 display：inline-block 在元素之后不添加换行符，因此该元素可以位于其他元素旁边。
+  */
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 45px;
+  letter-spacing: 0.8px;
+  line-height: 1em;
+  width: 96%;
+  display: block;
+}
+.banner h2 {
+  padding-left: 15px;
+  font-size: 65px;
+  letter-spacing: 0.8px;
+  line-height: 1em;
+  width: 96%;
+  display: block;
+}
+.wrap {
+  font-size: 35px;
+  letter-spacing: 0.8px;
+  line-height: 1.2em;
+  width: 93%;
+  display: block;
+
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+/* 下面对button进行布局
+要求：
+1. 字体与标题相对应
+2. 然后能够有动画:   鼠标移动上去的时候箭头向右移动 25px
+
+*/
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  /* 这里是一个动画，出现的时候 在0.3s内 ease-in-out */
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+/* 完成对需求2的开发 */
+.banner button:hover svg {
+  margin-left: 25px;
+}
+/* 
+下面对图片进行布局
+制作一个动画：
+上下移动
+*/
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
