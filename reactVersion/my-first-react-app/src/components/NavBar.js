@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
-import logo from '../image/logo.png';
-import weibo from '../image/weibo.png';
-import wechat from '../image/wechat.png';
-import qq from '../image/qq.png';
+import logo from '../assets/img/logo.svg';
+import weibo from '../assets/img/weibo.png';
+import wechat from '../assets/img/wechat.png';
+import qq from '../assets/img/qq.png';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
